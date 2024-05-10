@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SemaforoActivity2">
+
+    <LinearLayout
+        android:layout_width="383dp"
+        android:layout_height="648dp"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2">
+
+        <Switch
+            android:id="@+id/switchStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Status Semafaro" />
+
+        <Switch
+            android:id="@+id/switchLedVermelho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Led Vermelho" />
+
+        <Switch
+            android:id="@+id/switchLedVerde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Led Verde" />
+
+        <Switch
+            android:id="@+id/switchLedAmarelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="LedAmarelo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonVermelho"
+                android:layout_width="104dp"
+                android:layout_height="64dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@color/cinza"
+                android:enabled="false" />
+
+            <Button
+                android:id="@+id/buttonAmarelo"
+                android:layout_width="104dp"
+                android:layout_height="64dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@color/cinza"
+                android:enabled="false" />
+
+            <Button
+                android:id="@+id/buttonVerde"
+                android:layout_width="104dp"
+                android:layout_height="64dp"
+                android:backgroundTint="@color/cinza"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonVoltar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#68219C"
+            android:text="Voltar" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#68219C"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="IOT ESP32 MQTT"
+        app:titleTextColor="#FFFFFF"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
